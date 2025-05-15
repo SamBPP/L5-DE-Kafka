@@ -1,10 +1,6 @@
 {
-  "name": "Kafka Lab",
-  "dockerComposeFile": [
-    "docker-compose.yml"
-  ],
-  "service": "app",
-  "workspaceFolder": "/workspace",
+  "name": "Kafka Cloud Lab",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -12,9 +8,6 @@
         "ms-toolsai.jupyter"
       ]
     }
-  },
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
   },
   "postCreateCommand": "pip install -r requirements.txt"
 }
